@@ -22,8 +22,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-recipe-page-using-flexbox-haz7xFygtS](https://www.frontendmentor.io/solutions/responsive-recipe-page-using-flexbox-haz7xFygtS)
+- Live Site URL: [https://carstenkoerner.github.io/recipe-page/](https://carstenkoerner.github.io/recipe-page/)
 
 ## My process
 
@@ -35,7 +35,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### What I learned
 
-I learned to style lists. Change markers, change the gap between li marker and li content and set the line-height between li's and within a li if you have a line break.
+I learned to style lists. Changing the gap between li marker and li content and setting the line-height between li's and within li's if they have a line break, was a little bit tricky.
 
 ### Continued development
 
