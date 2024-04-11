@@ -1,0 +1,238 @@
+@font-face {
+    font-family:'Young';
+    font-style: normal;
+    font-weight: 400;
+    font-display:swap;
+    src: local('Young'), local('Young-Regular'),
+    url(../assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype'),
+}
+@font-face {
+  font-family:'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display:swap;
+  src: local('Outfit'), local('Outfit-Regular'),
+  url(../assets/fonts/outfit/static/Outfit-Regular.ttf) format('truetype'),
+}
+@font-face {
+  font-family:'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display:swap;
+  src: local('Outfit'), local('Outfit-Semi-Bold'),
+  url(../assets/fonts/outfit/static/Outfit-SemiBold.ttf) format('truetype'),
+}
+@font-face {
+  font-family:'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display:swap;
+  src: local('Outfit'), local('Outfit-Bold'),
+  url(../assets/fonts/outfit/static/Outfit-Bold.ttf) format('truetype'),
+}
+
+:root {
+  --color-nutmeg: hsl(14, 45%, 36%);
+  --color-dark-raspberry: hsl(332, 51%, 32%);
+  --color-White: hsl(0, 0%, 100%);
+  --color-rose-white: hsl(330, 100%, 98%);
+  --color-eggshell: hsl(30, 54%, 90%);
+  --color-light-grey: hsl(30, 18%, 87%);
+  --color-wenge-brown: hsl(30, 10%, 34%);
+  --color-dark-charcoal: hsl(24, 5%, 18%);
+  --color-attribution-a: hsl(228, 45%, 44%); 
+  --fontweight-regular: 400;
+  --fontweight-semi-bold: 600;
+  --fontweight-bold: 700;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+  
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+  
+body {
+  background-color: var(--color-eggshell);
+  font-family: "Outfit", sans-serif;
+  min-height: 99svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  font-weight: var(--fontweight-regular);
+  margin: 2rem;
+}
+
+h1, h2 {
+  font-family: "Young", sans-serif;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: var(--fontweight-regular);
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--color-dark-raspberry);
+  font-weight: var(--fontweight-semi-bold);
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: var(--fontweight-regular);
+  color: var(--color-nutmeg);
+}
+
+ul, ol {
+  font-size: 1rem;
+  font-weight: var(--fontweight-regular);
+  color: var(--color-wenge-brown);
+  padding-left: 1rem;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul li {
+  line-height: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+ol li {
+  line-height: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+ul li::marker {
+  color: var(--color-dark-raspberry);
+  font: normal var(--fontweight-semi-bold) 0.9rem "Outfit";
+}
+
+ol li::marker {
+  color: var(--color-dark-raspberry);
+  font: normal var(--fontweight-semi-bold) 1rem "Outfit";
+}
+
+.li-bold {
+  font-weight: var(--fontweight-bold);
+}
+
+.ul__li-gap {
+  position: relative;
+  left: 1.6rem;
+}
+
+.ol__li-gap {
+  position: relative;
+  left: 1rem;
+  line-height: 1.5rem;
+}
+
+hr {
+  margin-top: 1.5rem;
+  background: var(--color-light-grey); 
+  height: 1px; 
+  border: none
+}
+
+td {
+  padding: 0.9rem 1.5rem;
+}
+
+.card {
+  background-color: var(--color-White);
+  border-radius: 1rem;
+  max-width: 46rem;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.card__heading {
+  margin-bottom: 2rem;
+}
+
+.card__heading img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.card__sub-heading {
+  font-size: 1rem;
+  font-weight: var(--fontweight-regular);
+  line-height: 1.5rem;
+  color: var(--color-wenge-brown);
+}
+
+.card__preparation-time {
+  background-color: var(--color-rose-white);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1.3rem 0.5rem 1.3rem;
+}
+
+.card__instructions li {
+  line-height: 1rem;
+}
+
+.card__nutrition__description {
+  font-size: 1rem;
+  font-weight: var(--fontweight-regular);
+  color: var(--color-wenge-brown);
+  margin-bottom: 1rem;
+}
+
+.card__nutrition__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  font-weight: var(--fontweight-regular);
+  color: var(--color-wenge-brown);
+}
+
+.card__nutrition__table-border {
+  border-bottom: 1px solid var(--color-light-grey);
+}
+
+.card__nutrition__table__td-bold {
+  font-weight: var(--fontweight-bold);
+  color: var(--color-dark-raspberry);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: var(--color-attribution-a); 
+}
+
+@media (max-width: 450px) {
+  body {
+    margin: 0px;
+  }
+
+  .card {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0;
+  }
+  
+  .card__heading img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+  }
+
+  .card__heading {
+    margin-top: 11.5rem;
+    margin-top: clamp(5rem, 40vw, 11.5rem);
+  }
+}
